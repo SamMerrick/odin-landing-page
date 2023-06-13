@@ -8,11 +8,17 @@ a {
   text-decoration: none;
 }
 
+nav,
+footer,
+.hero {
+  background-color: #1f2937;
+  color: #efe7eb;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #1f2937;
   padding: 0px 92px;
 }
 
@@ -37,7 +43,6 @@ nav ul {
 }
 
 .hero {
-  background-color: #1f2937;
   display: flex;
   padding: 92px;
   gap: 24px;
@@ -160,4 +165,11 @@ nav a {
   padding: 4px 32px;
   background-color: transparent;
   color: #fff;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
 }
