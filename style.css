@@ -1,7 +1,10 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  max-width: 1200px;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -15,13 +18,6 @@ footer,
   color: #efe7eb;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 92px;
-}
-
 h1,
 h2,
 h3 {
@@ -29,23 +25,54 @@ h3 {
   margin: 0;
 }
 
-nav .logo {
+h1 {
+  font-size: 48px;
+  color: #f9faf8;
+}
+
+h2 {
+  font-size: 36px;
+  color: #1f2937;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px 32px;
+}
+
+.nav .logo {
   font-size: 24px;
   color: #f9faf8;
   font-weight: 900;
 }
 
-nav ul {
+.nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 24px;
 }
 
-.hero {
+section {
+  padding: 92px 0;
+}
+
+.hero-content {
   display: flex;
-  padding: 92px;
   gap: 24px;
+}
+
+.hero-content div {
+  flex: 1;
 }
 
 .hero-image {
@@ -55,15 +82,7 @@ nav ul {
   align-items: center;
 }
 
-.hero div {
-  flex: 1;
-}
-
-.hero h1 {
-  font-size: 48px;
-  color: #f9faf8;
-}
-.hero p,
+.hero-content p,
 nav a {
   font-size: 18px;
   color: #e5e7eb;
@@ -79,23 +98,10 @@ nav a {
   font-size: 14px;
 }
 
-.info {
-  padding-top: 24px;
-  padding-bottom: 48px;
-}
-
-.info h2 {
-  font-size: 36px;
-  color: #1f2937;
-  text-align: center;
-  margin: 48px;
-}
-
 .info-cards {
   display: flex;
   justify-content: center;
-  gap: 32px;
-  max-width: 800px;
+  gap: 48px;
   margin: 0 auto;
   text-align: center;
 }
@@ -114,14 +120,8 @@ nav a {
   border-color: #3882f6;
 }
 
-.quote-section {
-  background-color: #e5e7eb;
-  padding: 92px;
-}
-
 .quote {
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #e5e7eb;
 }
 
 .quote-text {
@@ -137,10 +137,6 @@ nav a {
   text-align: right;
 }
 
-.cta-section {
-  padding: 92px 0;
-}
-
 .cta {
   background-color: #3882f6;
   border-radius: 8px;
@@ -149,7 +145,6 @@ nav a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -171,5 +166,5 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 32px 0;
 }
