@@ -1,6 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
+  max-width: 1200px;
 }
 
 a {
@@ -75,7 +76,8 @@ nav a {
 }
 
 .info {
-  padding: 24px 0;
+  padding-top: 24px;
+  padding-bottom: 48px;
 }
 
 .info h2 {
@@ -106,4 +108,27 @@ nav a {
   border-style: solid;
   border-radius: 16px;
   border-color: #3882f6;
+}
+
+.quote-section {
+  background-color: #e5e7eb;
+  padding: 92px;
+}
+
+.quote {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quote-text {
+  color: #1f2937;
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+}
+.quote-author {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: right;
 }
