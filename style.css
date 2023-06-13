@@ -20,7 +20,7 @@ h1,
 h2,
 h3 {
   font-weight: 900;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 nav .logo {
@@ -57,7 +57,6 @@ nav ul {
 .hero h1 {
   font-size: 48px;
   color: #f9faf8;
-  margin-top: 0;
 }
 .hero p,
 nav a {
@@ -84,7 +83,7 @@ nav a {
   font-size: 36px;
   color: #1f2937;
   text-align: center;
-  margin-bottom: 48px;
+  margin: 48px;
 }
 
 .info-cards {
@@ -131,4 +130,34 @@ nav a {
   font-weight: 700;
   font-size: 24px;
   text-align: right;
+}
+
+.cta-section {
+  padding: 92px 0;
+}
+
+.cta {
+  background-color: #3882f6;
+  border-radius: 8px;
+  color: #fff;
+  padding: 48px 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.cta p {
+  margin: 0;
+}
+
+.cta a {
+  border-color: #fff;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  padding: 4px 32px;
+  background-color: transparent;
+  color: #fff;
 }
